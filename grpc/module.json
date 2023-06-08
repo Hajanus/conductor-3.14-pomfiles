@@ -1,0 +1,357 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.netflix.conductor",
+    "module": "conductor-grpc",
+    "version": "3.14.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.5.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "conductor-grpc-3.14.0-SNAPSHOT.jar",
+          "url": "conductor-grpc-3.14.0-SNAPSHOT.jar",
+          "size": 1385895,
+          "sha512": "b2d60f3ed7abec52bfe0e32882bd04b1710cbe10c653a5f3b87c8bb59d8e0b67054239edc6b367cfb601e0c8179d2d77e476828e15be79f83b39631d31c7ac37",
+          "sha256": "b8cc241ea969b22783feda98de4056423b11d06ed1e8d91210c414b5f9f0f9f3",
+          "sha1": "e10fde60ec9b3217ba53ad8672b32358c34a7b95",
+          "md5": "852f04881a546b22119c0e30f9cf8bde"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-core",
+          "version": {
+            "strictly": "2.17.2",
+            "requires": "2.17.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-api",
+          "version": {
+            "strictly": "2.17.2",
+            "requires": "2.17.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-slf4j-impl",
+          "version": {
+            "strictly": "2.17.2",
+            "requires": "2.17.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-jul",
+          "version": {
+            "strictly": "2.17.2",
+            "requires": "2.17.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-web",
+          "version": {
+            "strictly": "2.17.2",
+            "requires": "2.17.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            }
+          ]
+        },
+        {
+          "group": "com.netflix.conductor",
+          "module": "conductor-common",
+          "version": {
+            "requires": "3.14.0-SNAPSHOT"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            }
+          ]
+        },
+        {
+          "group": "com.google.protobuf",
+          "module": "protobuf-java",
+          "version": {
+            "requires": "3.13.0"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            }
+          ]
+        },
+        {
+          "group": "io.grpc",
+          "module": "grpc-protobuf",
+          "version": {
+            "requires": "1.50.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            }
+          ]
+        },
+        {
+          "group": "io.grpc",
+          "module": "grpc-stub",
+          "version": {
+            "requires": "1.50.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            }
+          ]
+        },
+        {
+          "group": "javax.annotation",
+          "module": "javax.annotation-api",
+          "version": {
+            "requires": "1.3.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "conductor-grpc-3.14.0-SNAPSHOT.jar",
+          "url": "conductor-grpc-3.14.0-SNAPSHOT.jar",
+          "size": 1385895,
+          "sha512": "b2d60f3ed7abec52bfe0e32882bd04b1710cbe10c653a5f3b87c8bb59d8e0b67054239edc6b367cfb601e0c8179d2d77e476828e15be79f83b39631d31c7ac37",
+          "sha256": "b8cc241ea969b22783feda98de4056423b11d06ed1e8d91210c414b5f9f0f9f3",
+          "sha1": "e10fde60ec9b3217ba53ad8672b32358c34a7b95",
+          "md5": "852f04881a546b22119c0e30f9cf8bde"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "conductor-grpc-3.14.0-SNAPSHOT-javadoc.jar",
+          "url": "conductor-grpc-3.14.0-SNAPSHOT-javadoc.jar",
+          "size": 1279,
+          "sha512": "cb329ae4f098993fe76384e9c46919596f40596dfd5c158946ac472ddd19da5b632b9da384f9584489a0f1392f5b15f3cbb276ab1f8f304c59373bb9456086e4",
+          "sha256": "2264d48a1df7b53a28dcd0c2cc7c982c994abb51e067065f9e46e0923e003560",
+          "sha1": "877310449caf3a5a42de7f04318df7763884dda8",
+          "md5": "368c4a3994c7397715b0379e3773ae8f"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "conductor-grpc-3.14.0-SNAPSHOT-sources.jar",
+          "url": "conductor-grpc-3.14.0-SNAPSHOT-sources.jar",
+          "size": 328960,
+          "sha512": "3cb24feef198d635d0b1292fb812b67ac314a6045591c3751de7447540589064c2288e097331612ecb5cf9afaac34f67d681a17f398689d8a3b62a4fce516be5",
+          "sha256": "6a586b4a36b15ffa243576308c0fe259c6e11b44a1c56a96c231c4816b70d335",
+          "sha1": "1c59c68444553b418e52d944735b9737c8dd4881",
+          "md5": "d35dbf241db996a4c94f2cc965a182f9"
+        }
+      ]
+    }
+  ]
+}

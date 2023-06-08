@@ -1,0 +1,604 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.netflix.conductor",
+    "module": "conductor-client",
+    "version": "3.14.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.5.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "conductor-client-3.14.0-SNAPSHOT.jar",
+          "url": "conductor-client-3.14.0-SNAPSHOT.jar",
+          "size": 65998,
+          "sha512": "edbeb1bb6f680fd86d9bbfe428a669b01040b9d61b4cba1f5199c4b231822291b0377c674d9f583df86bbc472f46e1d504c0afec4376c49a49e3dc75c14fe825",
+          "sha256": "b10034d762737fa181b3e26ca769af6473f1467fc27ec9a7da2ccef7b5dd4481",
+          "sha1": "4affc4b4d5af80e4ef78af8e1f5d0c5135b64a3c",
+          "md5": "bacb78284a6e2b3f968bd7ab1b5af2fc"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-core",
+          "version": {
+            "strictly": "2.17.2",
+            "requires": "2.17.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "amazon",
+              "module": "aws-java-sdk"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-api",
+          "version": {
+            "strictly": "2.17.2",
+            "requires": "2.17.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "amazon",
+              "module": "aws-java-sdk"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-slf4j-impl",
+          "version": {
+            "strictly": "2.17.2",
+            "requires": "2.17.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "amazon",
+              "module": "aws-java-sdk"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-jul",
+          "version": {
+            "strictly": "2.17.2",
+            "requires": "2.17.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "amazon",
+              "module": "aws-java-sdk"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-web",
+          "version": {
+            "strictly": "2.17.2",
+            "requires": "2.17.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "amazon",
+              "module": "aws-java-sdk"
+            }
+          ]
+        },
+        {
+          "group": "com.netflix.conductor",
+          "module": "conductor-common",
+          "version": {
+            "requires": "3.14.0-SNAPSHOT"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "amazon",
+              "module": "aws-java-sdk"
+            }
+          ]
+        },
+        {
+          "group": "com.sun.jersey",
+          "module": "jersey-client",
+          "version": {
+            "requires": "1.19.4"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "amazon",
+              "module": "aws-java-sdk"
+            }
+          ]
+        },
+        {
+          "group": "javax.ws.rs",
+          "module": "javax.ws.rs-api",
+          "version": {
+            "requires": "2.1.1"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "amazon",
+              "module": "aws-java-sdk"
+            }
+          ]
+        },
+        {
+          "group": "org.glassfish.jersey.core",
+          "module": "jersey-common",
+          "version": {
+            "requires": "2.22.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "amazon",
+              "module": "aws-java-sdk"
+            }
+          ]
+        },
+        {
+          "group": "com.netflix.spectator",
+          "module": "spectator-api",
+          "version": {
+            "requires": "0.122.0"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "amazon",
+              "module": "aws-java-sdk"
+            }
+          ]
+        },
+        {
+          "group": "com.netflix.eureka",
+          "module": "eureka-client",
+          "version": {
+            "requires": "1.10.10"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "amazon",
+              "module": "aws-java-sdk"
+            },
+            {
+              "group": "com.google.guava",
+              "module": "guava"
+            }
+          ]
+        },
+        {
+          "group": "com.amazonaws",
+          "module": "aws-java-sdk-core",
+          "version": {
+            "requires": "1.11.86"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "amazon",
+              "module": "aws-java-sdk"
+            }
+          ]
+        },
+        {
+          "group": "com.fasterxml.jackson.jaxrs",
+          "module": "jackson-jaxrs-json-provider",
+          "version": {
+            "requires": "2.13.3"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "amazon",
+              "module": "aws-java-sdk"
+            }
+          ]
+        },
+        {
+          "group": "com.fasterxml.jackson.datatype",
+          "module": "jackson-datatype-jsr310",
+          "version": {
+            "requires": "2.13.3"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "amazon",
+              "module": "aws-java-sdk"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.commons",
+          "module": "commons-lang3",
+          "version": {
+            "requires": "3.12.0"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "amazon",
+              "module": "aws-java-sdk"
+            }
+          ]
+        },
+        {
+          "group": "commons-io",
+          "module": "commons-io",
+          "version": {
+            "requires": "2.7"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "amazon",
+              "module": "aws-java-sdk"
+            }
+          ]
+        },
+        {
+          "group": "org.slf4j",
+          "module": "slf4j-api",
+          "version": {
+            "requires": "1.7.36"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            },
+            {
+              "group": "amazon",
+              "module": "aws-java-sdk"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "conductor-client-3.14.0-SNAPSHOT.jar",
+          "url": "conductor-client-3.14.0-SNAPSHOT.jar",
+          "size": 65998,
+          "sha512": "edbeb1bb6f680fd86d9bbfe428a669b01040b9d61b4cba1f5199c4b231822291b0377c674d9f583df86bbc472f46e1d504c0afec4376c49a49e3dc75c14fe825",
+          "sha256": "b10034d762737fa181b3e26ca769af6473f1467fc27ec9a7da2ccef7b5dd4481",
+          "sha1": "4affc4b4d5af80e4ef78af8e1f5d0c5135b64a3c",
+          "md5": "bacb78284a6e2b3f968bd7ab1b5af2fc"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "conductor-client-3.14.0-SNAPSHOT-javadoc.jar",
+          "url": "conductor-client-3.14.0-SNAPSHOT-javadoc.jar",
+          "size": 1286,
+          "sha512": "51f89f794cb762f0f54f9bfe0367be58d50cc4cfc9810c5762a45a16ac8cf08dba31530e6d5c69a865ac3a188179759f2740a5be39d3d653c8da133aca0b5e35",
+          "sha256": "c1f2081b1b269b0a4373a49175c0b3025e1307d9133e01665f136712af2a326b",
+          "sha1": "7e3b900e1b36f4b25b7a7373a1e6ceb4be242c84",
+          "md5": "3ba9d50507475d5b214e84906614d544"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "conductor-client-3.14.0-SNAPSHOT-sources.jar",
+          "url": "conductor-client-3.14.0-SNAPSHOT-sources.jar",
+          "size": 38992,
+          "sha512": "69f50ce4562e68a3cf787cdaccd99e1babb6df1b813a31409ee63e15c6ef8cf7ba5feec5052eba627e85ed65385395759b1617ef6fb284f5523a0850814ed6da",
+          "sha256": "bf05db7f19edaaf9283f79bf2ff3ee4e42b37c845d85b28f39359bbf182b4abe",
+          "sha1": "dd28e37851f5c00f7ea14715b1ac65ef97f88986",
+          "md5": "ac3b1ec976d469b53bb26cba1bb709da"
+        }
+      ]
+    }
+  ]
+}

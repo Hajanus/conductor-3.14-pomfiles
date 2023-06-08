@@ -1,0 +1,332 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.netflix.conductor",
+    "module": "conductor-cassandra-persistence",
+    "version": "3.14.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.5.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "conductor-cassandra-persistence-3.14.0-SNAPSHOT.jar",
+          "url": "conductor-cassandra-persistence-3.14.0-SNAPSHOT.jar",
+          "size": 47316,
+          "sha512": "174224e6dcd2b856047fc4b72452751b0132c8498fe6fb05bda428b99b37739ae74623184604d7f6c8a3ed1cfa8c4e872a1726db501f6b3fe1cdaaa2985cfee9",
+          "sha256": "d49072d197458bdc1003954e0e0a01f946f6bd41d1208d00663de193ed56cda9",
+          "sha1": "6cb16c8ecf827bc19aa0dc0ded4ea8f6888e9a45",
+          "md5": "7a290d2d207059fe44bdd861f08f19b9"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-core",
+          "version": {
+            "strictly": "2.17.2",
+            "requires": "2.17.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-api",
+          "version": {
+            "strictly": "2.17.2",
+            "requires": "2.17.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-slf4j-impl",
+          "version": {
+            "strictly": "2.17.2",
+            "requires": "2.17.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-jul",
+          "version": {
+            "strictly": "2.17.2",
+            "requires": "2.17.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-web",
+          "version": {
+            "strictly": "2.17.2",
+            "requires": "2.17.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            }
+          ]
+        },
+        {
+          "group": "com.netflix.conductor",
+          "module": "conductor-common",
+          "version": {
+            "requires": "3.14.0-SNAPSHOT"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            }
+          ]
+        },
+        {
+          "group": "com.netflix.conductor",
+          "module": "conductor-core",
+          "version": {
+            "requires": "3.14.0-SNAPSHOT"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            }
+          ]
+        },
+        {
+          "group": "com.datastax.cassandra",
+          "module": "cassandra-driver-core",
+          "version": {
+            "requires": "3.10.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.commons",
+          "module": "commons-lang3",
+          "version": {
+            "requires": "3.12.0"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "conductor-cassandra-persistence-3.14.0-SNAPSHOT.jar",
+          "url": "conductor-cassandra-persistence-3.14.0-SNAPSHOT.jar",
+          "size": 47316,
+          "sha512": "174224e6dcd2b856047fc4b72452751b0132c8498fe6fb05bda428b99b37739ae74623184604d7f6c8a3ed1cfa8c4e872a1726db501f6b3fe1cdaaa2985cfee9",
+          "sha256": "d49072d197458bdc1003954e0e0a01f946f6bd41d1208d00663de193ed56cda9",
+          "sha1": "6cb16c8ecf827bc19aa0dc0ded4ea8f6888e9a45",
+          "md5": "7a290d2d207059fe44bdd861f08f19b9"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "conductor-cassandra-persistence-3.14.0-SNAPSHOT-javadoc.jar",
+          "url": "conductor-cassandra-persistence-3.14.0-SNAPSHOT-javadoc.jar",
+          "size": 1336,
+          "sha512": "e841c7b52b9a7f45cccf0cc6473eb831227b6a4c1cd435320af4bb01c74a45530638fc9fe0631e8e1594045a266febbe4b3bb6c4b861484a47ce2c593e475c40",
+          "sha256": "e6b5832bc3e8827771fd3093d327354911ac0ace13f138b18360bf3534b12e0a",
+          "sha1": "f781f93e0395450a7ee07a348cfb26536c9907a6",
+          "md5": "15984711575fc2deb159548db0bbed13"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "conductor-cassandra-persistence-3.14.0-SNAPSHOT-sources.jar",
+          "url": "conductor-cassandra-persistence-3.14.0-SNAPSHOT-sources.jar",
+          "size": 29226,
+          "sha512": "41a4a357b48a5e85685d0fb3765e72383d39f4edbe69d026233f27cd2354b6664e3b5781bfb5c5f2a17d3479402ab5917d091ffad28d7b8bd0a5638bd93baee5",
+          "sha256": "8a7daf8957f43d900f2f517abe6300f99ecd06232a10efef3d85b5763fc32be3",
+          "sha1": "f7af994f601af226212e4222a0e47eb6248596b1",
+          "md5": "fcedc3779c66dfbc4b8cfd36eddd6a73"
+        }
+      ]
+    }
+  ]
+}

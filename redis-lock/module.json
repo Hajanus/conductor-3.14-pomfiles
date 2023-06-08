@@ -1,0 +1,307 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.netflix.conductor",
+    "module": "conductor-redis-lock",
+    "version": "3.14.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.5.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "conductor-redis-lock-3.14.0-SNAPSHOT.jar",
+          "url": "conductor-redis-lock-3.14.0-SNAPSHOT.jar",
+          "size": 11379,
+          "sha512": "3a0bd86b286b7003f5c334a0492820aef79cb1c47a163a2de44ea19bf46d4b5e359a6fe40eb0bc997814bab10093dc603aa8026d7553dccb7c82254523dbea41",
+          "sha256": "509137cb259a766955d6849311d33753da1ac7f26620e6ea115d595d10d0e970",
+          "sha1": "bbf7ed181e98c3a0582d6bfff4c7124286847d62",
+          "md5": "2994ca7cc40df6dca345f2790597b998"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-core",
+          "version": {
+            "strictly": "2.17.2",
+            "requires": "2.17.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-api",
+          "version": {
+            "strictly": "2.17.2",
+            "requires": "2.17.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-slf4j-impl",
+          "version": {
+            "strictly": "2.17.2",
+            "requires": "2.17.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-jul",
+          "version": {
+            "strictly": "2.17.2",
+            "requires": "2.17.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-web",
+          "version": {
+            "strictly": "2.17.2",
+            "requires": "2.17.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            }
+          ]
+        },
+        {
+          "group": "com.netflix.conductor",
+          "module": "conductor-core",
+          "version": {
+            "requires": "3.14.0-SNAPSHOT"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.commons",
+          "module": "commons-lang3",
+          "version": {
+            "requires": "3.12.0"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            }
+          ]
+        },
+        {
+          "group": "org.redisson",
+          "module": "redisson",
+          "version": {
+            "requires": "3.13.3"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            },
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-core"
+            },
+            {
+              "group": "org.apache.logging.log4j",
+              "module": "log4j-to-slf4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-log4j12"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "conductor-redis-lock-3.14.0-SNAPSHOT.jar",
+          "url": "conductor-redis-lock-3.14.0-SNAPSHOT.jar",
+          "size": 11379,
+          "sha512": "3a0bd86b286b7003f5c334a0492820aef79cb1c47a163a2de44ea19bf46d4b5e359a6fe40eb0bc997814bab10093dc603aa8026d7553dccb7c82254523dbea41",
+          "sha256": "509137cb259a766955d6849311d33753da1ac7f26620e6ea115d595d10d0e970",
+          "sha1": "bbf7ed181e98c3a0582d6bfff4c7124286847d62",
+          "md5": "2994ca7cc40df6dca345f2790597b998"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "conductor-redis-lock-3.14.0-SNAPSHOT-javadoc.jar",
+          "url": "conductor-redis-lock-3.14.0-SNAPSHOT-javadoc.jar",
+          "size": 1298,
+          "sha512": "f9d15faf90026ba169a763b02e2d8e50c4ed5825f3b8c5c28b1d4c027d67c5db5e4622b2c164e93a220d2297ed72b336cde54b302ca68881a4d093b5a659bed5",
+          "sha256": "49e0b8a4f9381dfa622a27cf7a09ba3c78291359f6a841de0d478d15c5248207",
+          "sha1": "81c1bf3fafee052549fa2bee7eef834abc299633",
+          "md5": "17fed5f9cd3a51b07d61511c829950f2"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "conductor-redis-lock-3.14.0-SNAPSHOT-sources.jar",
+          "url": "conductor-redis-lock-3.14.0-SNAPSHOT-sources.jar",
+          "size": 7241,
+          "sha512": "0e5367f13f52384c24957cc34ba171a45106739f65d8b0c815eecdf7332ac9eec4d184d270d1f73ebe2b37acdc6decb7867293aab67382a53687b4ab0d89573f",
+          "sha256": "5d0cf4c5dc3bab3f0b7eab4fb185487bfc59b27c5a08972485820e554ef6d313",
+          "sha1": "10707f4e4636cafbb38d5c0af3c55cc13d13621a",
+          "md5": "f902e4f2b0b09346f301b9b6947254ad"
+        }
+      ]
+    }
+  ]
+}
